@@ -1,5 +1,3 @@
-import { addToDo, deleteCheck } from "./toDoFunctions";
-
 // selectors
 
 const todoInput = document.querySelector(".todo-input");
@@ -11,4 +9,5 @@ const todoList = document.querySelector(".todo-list");
 todoButton.addEventListener("click", addToDo);
 todoList.addEventListener("click", deleteCheck);
 
+import { addToDo, deleteCheck } from "./toDoFunctions";
 
