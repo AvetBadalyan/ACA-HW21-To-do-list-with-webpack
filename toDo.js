@@ -9,5 +9,5 @@ const todoList = document.querySelector(".todo-list");
 todoButton.addEventListener("click", addToDo);
 todoList.addEventListener("click", deleteCheck);
 
-import { addToDo, deleteCheck } from "./toDoFunctions";
+import { addToDo, deleteCheck } from "./toDoFunctions.js";
 
