@@ -1,5 +1,7 @@
+import {todoInput, todoButton, todoList} from "./toDo.js"
+
 // Functions
-export function addToDo(event) {
+function addToDo(event) {
   // prevent form from submitting
   event.preventDefault();
   // Todo DIV
@@ -26,7 +28,7 @@ export function addToDo(event) {
   todoInput.value = "";
 }
 
-export function deleteCheck(e) {
+function deleteCheck(e) {
   const item = e.target;
   // Delete TODO
   if (item.classList[0] === "trash-btn") {
@@ -44,3 +46,5 @@ export function deleteCheck(e) {
     todo.classList.toggle("completed");
   }
 }
+
+export { addToDo, deleteCheck };
