@@ -22,7 +22,9 @@ header {
 
 .header-container {
   display: flex;
-  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
   position: absolute;
   left: 0;
   top: 0;
@@ -54,120 +56,4 @@ header {
   80% {
     background-image: url("../assets/images/slider-img6.jpg");
   }
-}
-
-/* ////// navigation menu start //////// */
-
-.logoNavbar {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding-top: 50px;
-}
-
-.navbar {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.navbar a {
-  display: inline-block;
-  text-decoration: none;
-  text-align: center;
-  color: rgba(255, 255, 255, 1);
-  margin-left: 50px;
-  font-size: 24px;
-  transition: all 0.5s ease;
-  cursor: pointer;
-}
-
-.navbar a:hover {
-  color: rgba(255, 69, 0, 1);
-  transform: scale(1.1);
-}
-
-/* ////// navigation menu End //////// */
-
-/* ////// dropdown menu start //////// */
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-  transition: all 0.8s ease;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  left: 30px;
-  border-radius: 8px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  margin: auto;
-  text-align: center;
-  font-size: 16px;
-}
-
-.dropdown-content a {
-  color: white;
-  padding-bottom: 10px;
-  text-decoration: none;
-  display: inline-block;
-  border-radius: 8px;
-  margin: auto;
-  text-align: center;
-  transform: scale(1.05);
-}
-
-.dropdown-content a:hover {
-  background-color: white;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* ////// dropdown menu end //////// */
-
-.logo {
-  font-size: 48px;
-  cursor: pointer;
-  background-color: rgba(255, 255, 255, 0.274);
-  border-radius: 15px;
-}
-
-.logo img {
-  height: 80px;
-  width: auto;
-  color: white;
-}
-
-.darker {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.dropdown-content a {
-  font-size: 22px;
-}
-
-@keyframes gettingHi {
-  0% {
-    width: 0vh;
-  }
-  25% {
-  }
-  50% {
-  }
-  75% {
-  }
-  100% {
-    width: 100vh;
-  }
-}
-.something-animation {
-  animation: gettingHi 5px linear infinite !important;
 }

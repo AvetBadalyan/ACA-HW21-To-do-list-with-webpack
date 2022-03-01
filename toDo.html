@@ -35,100 +35,24 @@
   <body>
     <header>
       <div class="header-container">
-        <div class="darker">
-          <!-- NAVIGATION MENU-->
-          <div class="logoNavbar">
-            <!-- LOGO DIV -->
-            <div class="logo something-animation">
-              <a
-                href="/index.html
-              "
-                ><img src="./assets/images/logo.png" alt="logo"
-              /></a>
-            </div>
-            <nav class="navbar">
-              <div class="dropdown">
-                <a href="" class="dropbtn">Our Services</a>
-                <div class="dropdown-content">
-                  <a href="">Gym</a>
-                  <a href="">Group Exercises</a>
-                  <a href="">Swimming Pool</a>
-                </div>
-              </div>
-              <div><a href="">Daily Planner</a></div>
-              <div><a href="">I Want In</a></div>
+        <h1>AMA Gym Task list</h1>
 
-              <div><a href="">About Us</a></div>
-            </nav>
-          </div>
+        <form>
+          <input
+            type="text"
+            class="todo-input"
+            placeholder="Biceps, Triceps, Cardio etc"
+          />
+          <button class="todo-button" type="submit">
+            <i class="fas fa-plus-square"></i>
+          </button>
+        </form>
+        <div class="todo-container">
+          <ul class="todo-list"></ul>
         </div>
       </div>
     </header>
 
-    <main>
-      <h1>AMA Gym Task list</h1>
-
-      <form>
-        <input
-          type="text"
-          class="todo-input"
-          placeholder="Biceps, Triceps, Cardio etc"
-        />
-        <button class="todo-button" type="submit">
-          <i class="fas fa-plus-square"></i>
-        </button>
-      </form>
-      <div class="todo-container">
-        <ul class="todo-list"></ul>
-      </div>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <div class="gmap_canvas">
-          <iframe
-            id="gmap_canvas"
-            src="https://maps.google.com/maps?q=armenian%20code%20academy&t=&z=15&ie=UTF8&iwloc=&output=embed"
-            frameborder="0"
-            scrolling="no"
-            marginheight="0"
-            marginwidth="0"
-          >
-          </iframe>
-        </div>
-        <div class="row">
-          <div class="footer-col">
-            <h4>Company</h4>
-            <ul>
-              <li><a href="#">about us</a></li>
-              <li><a href="#">our services</a></li>
-              <li><a href="#">privacy policy</a></li>
-              <li><a href="#">affiliate program</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>Online Shop</h4>
-            <ul>
-              <li><a href="#">protein</a></li>
-              <li><a href="#">bags</a></li>
-              <li><a href="#">shoes</a></li>
-              <li><a href="#">uniform</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>Follow Us</h4>
-            <div class="social-links">
-              <a href="#"> <i class="fab fa-facebook-f"></i> </a>
-              <a href="#"> <i class="fab fa-twitter"></i> </a>
-              <a href="#"> <i class="fab fa-instagram"></i> </a>
-              <a href="#"> <i class="fab fa-linkedin-in"></i> </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <script type="module" src="./dist/main.bundle.js"></script>
+    <script src="./dist/main.bundle.js"></script>
   </body>
 </html>
